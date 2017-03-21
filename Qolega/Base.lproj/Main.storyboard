@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Qolega" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_login" translatesAutoresizingMaskIntoConstraints="NO" id="Mj5-g2-VvV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="bga-8V-fgI">
+                                <rect key="frame" x="61" y="288.5" width="253" height="90"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BpA-Dr-j1c">
+                                        <rect key="frame" x="0.0" y="0.0" width="253" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RFm-q3-bqI">
+                                        <rect key="frame" x="0.0" y="60" width="253" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwj-nd-c6b">
+                                <rect key="frame" x="98" y="418.5" width="180" height="40"/>
+                                <color key="backgroundColor" red="0.086274509803921567" green="0.69019607843137254" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="qtq-Da-hkg"/>
+                                    <constraint firstAttribute="width" constant="180" id="uX6-8e-d7k"/>
+                                </constraints>
+                                <state key="normal" title="Login To Continue">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showRefList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5OW-zO-537"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="L0J-IZ-P7S">
+                                <rect key="frame" x="83" y="163" width="209" height="55.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_qolega" translatesAutoresizingMaskIntoConstraints="NO" id="6Hj-1Z-2l2">
+                                        <rect key="frame" x="19.5" y="0.0" width="170" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="u7I-8A-gwa"/>
+                                            <constraint firstAttribute="width" constant="170" id="wOb-su-MVa"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join Us in Hiring Revolution" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJK-fH-Z1v">
+                                        <rect key="frame" x="0.0" y="35" width="209" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bga-8V-fgI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45" id="59O-92-oN1"/>
+                            <constraint firstItem="mwj-nd-c6b" firstAttribute="top" secondItem="bga-8V-fgI" secondAttribute="bottom" constant="40" id="7VG-th-Xxd"/>
+                            <constraint firstItem="Mj5-g2-VvV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8n0-4Z-xYm"/>
+                            <constraint firstItem="L0J-IZ-P7S" firstAttribute="centerX" secondItem="Mj5-g2-VvV" secondAttribute="centerX" id="Agt-jE-ge1"/>
+                            <constraint firstItem="Mj5-g2-VvV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JRf-ES-sht"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mj5-g2-VvV" secondAttribute="bottom" id="VFb-RT-O1g"/>
+                            <constraint firstItem="bga-8V-fgI" firstAttribute="top" secondItem="L0J-IZ-P7S" secondAttribute="bottom" constant="70" id="a4T-Qg-Fp7"/>
+                            <constraint firstItem="bga-8V-fgI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hBz-f0-lAm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bga-8V-fgI" secondAttribute="trailing" constant="45" id="iio-m7-wuB"/>
+                            <constraint firstItem="mwj-nd-c6b" firstAttribute="centerX" secondItem="Mj5-g2-VvV" secondAttribute="centerX" id="iw7-cw-5WW"/>
+                            <constraint firstAttribute="trailing" secondItem="Mj5-g2-VvV" secondAttribute="trailing" id="jqQ-fx-ab7"/>
+                            <constraint firstItem="bga-8V-fgI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="u9U-T0-XEo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="Izw-EQ-UWa" kind="show" identifier="showReferringList" id="AK2-7r-hLc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.199999999999999" y="31.934032983508249"/>
+        </scene>
+        <!--Notifications-->
+        <scene sceneID="p3y-nX-5o4">
+            <objects>
+                <navigationController id="3Cp-Q6-y0o" userLabel="Notifications" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Notifications" image="star1" id="maF-z6-z5k"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EZA-bJ-yLN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="SNN-Sb-5nq">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="iMm-vX-nc8" kind="relationship" relationship="rootViewController" id="suG-WK-22h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wIh-34-Qi8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1728.8" y="31.934032983508249"/>
+        </scene>
+        <!--Joblist Table View Controller-->
+        <scene sceneID="Ok4-e3-hGI">
+            <objects>
+                <tableViewController id="iMm-vX-nc8" customClass="JoblistTableViewController" customModule="Qolega" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="scl-zy-Yy6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="50" id="dpA-GT-M3T" customClass="JoblistTableViewCell" customModule="Qolega" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dpA-GT-M3T" id="OGb-Zi-oq5">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cE-1i-rWg">
+                                            <rect key="frame" x="17" y="8" width="342" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="jobTitle" destination="6cE-1i-rWg" id="yNm-m2-aaM"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="iMm-vX-nc8" id="ZGR-UP-J2R"/>
+                            <outlet property="delegate" destination="iMm-vX-nc8" id="beA-l1-Ay0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="EcR-BB-hEf"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aF4-UO-UPp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2669.5999999999999" y="31.934032983508249"/>
+        </scene>
+        <!--Referral List View Controller-->
+        <scene sceneID="gwZ-ld-c1M">
+            <objects>
+                <viewController storyboardIdentifier="ReferralVC" automaticallyAdjustsScrollViewInsets="NO" id="aMS-PS-Fb0" customClass="ReferralListViewController" customModule="Qolega" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZLj-A6-HUz"/>
+                        <viewControllerLayoutGuide type="bottom" id="fQK-Tc-Noz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yj5-FW-hvo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tic-KN-8C0">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Tic-KN-8C0" secondAttribute="trailing" id="ENB-9G-4Zb"/>
+                            <constraint firstItem="fQK-Tc-Noz" firstAttribute="top" secondItem="Tic-KN-8C0" secondAttribute="bottom" id="Jf2-in-viJ"/>
+                            <constraint firstItem="Tic-KN-8C0" firstAttribute="top" secondItem="ZLj-A6-HUz" secondAttribute="bottom" id="P6M-GQ-g71"/>
+                            <constraint firstItem="Tic-KN-8C0" firstAttribute="leading" secondItem="Yj5-FW-hvo" secondAttribute="leading" id="gZy-k9-Yob"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Nle-ZH-4Ci"/>
+                    <connections>
+                        <outlet property="scrollView" destination="Tic-KN-8C0" id="di4-Fp-KuJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yus-7d-8pq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2709.5999999999999" y="794.75262368815595"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="KLJ-cH-rh8">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Izw-EQ-UWa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="DIh-Jy-PPd">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="gb8-y4-FKP" kind="relationship" relationship="viewControllers" id="2EG-O6-sic"/>
+                        <segue destination="3Cp-Q6-y0o" kind="relationship" relationship="viewControllers" id="u02-TB-xvm"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9u-Es-Xad" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789.60000000000002" y="31.934032983508249"/>
+        </scene>
+        <!--Referrence List-->
+        <scene sceneID="DlP-De-r49">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gb8-y4-FKP" userLabel="Referrence List" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Referrence List" image="star2" id="OPn-MM-plZ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OGP-V4-2L7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aMS-PS-Fb0" kind="relationship" relationship="rootViewController" id="Ijh-DE-sGj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KjG-bv-RrU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1729" y="795"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background_login" width="540" height="960"/>
+        <image name="logo_qolega" width="306" height="60"/>
+        <image name="star1" width="32" height="32"/>
+        <image name="star2" width="32" height="32"/>
+    </resources>
+</document>
